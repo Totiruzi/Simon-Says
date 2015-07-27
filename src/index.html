@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.brown-light_green.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script>
+        Modernizr.load([{
+            load: "//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js",
+            complete: function () {
+                if (!window.jQuery) {
+                    Modernizr.load("js/jquery-1.11.3.min.js");
+                }
+            },
+        },
+            "js/ui.js",
+            "//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js",
+            "//cdn.babylonjs.com/2-1/babylon.js",
+            {
+                load: "js/main.js",
+                complete: function () {
+                    $(function () {
+                        var game = new SimonSays.Game();
+                        game.init();
+                    })
+                }
+            },
+        ]);
+    </script>
+
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+    <div id="score">Current Score is:</div>
+    <div id="start_game" class="new_game">
+        <div id="start_game_message">
+            <h2>Let's Play Simon Says!</h2>
+        </div>
+        <button id="start_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            New Game
+        </button>
+    </div>
+</div>
+<canvas id="glCanvas"></canvas>
+</body>
+</html>
