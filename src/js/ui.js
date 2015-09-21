@@ -13,7 +13,6 @@ SimonSays.ui = (function($){
         showScore: function(){
             $("#score").fadeIn(3000);
         }
-
     };
     return ui;
 })(jQuery);
