@@ -9,10 +9,9 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.brown-light_green.min.css">
+    <link rel="stylesheet"
+          href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.brown-light_green.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script>
@@ -22,11 +21,11 @@
                 if (!window.jQuery) {
                     Modernizr.load("js/jquery-1.11.3.min.js");
                 }
-            },
+            }
         },
             "js/ui.js",
             "//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js",
-            "//cdn.babylonjs.com/2-1/babylon.js",
+            "js/babylon.js",
             {
                 load: "js/main.js",
                 complete: function () {
@@ -35,7 +34,7 @@
                         game.init();
                     })
                 }
-            },
+            }
         ]);
     </script>
 
@@ -53,7 +52,7 @@
             <h2>Let's Play Simon Says!</h2>
         </div>
         <button id="start_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-            New Game
+            Let's Begin!
         </button>
     </div>
 </div>

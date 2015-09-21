@@ -11,11 +11,9 @@ SimonSays.ui = (function($){
             $(".new_game").fadeOut(300);
         },
         showScore: function(){
-            $("#score").fadeIn(300);
-        },
-        hideScore: function () {
-            $("#score").fadeOut(0);
+            $("#score").fadeIn(3000);
         }
+
     };
     return ui;
 })(jQuery);
